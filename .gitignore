@@ -1,0 +1,51 @@
+# --- secrets ---
+.env
+.env.local
+*.env.production
+web/.env.local
+
+# --- python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# --- node / next ---
+node_modules/
+.next/
+out/
+dist/
+build/
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# --- user data / runtime ---
+uploads/
+data/sessions/
+data/pdfs/*.pdf
+!data/pdfs/.gitkeep
+qdrant_storage/
+
+# --- ML model + cache ---
+.cache/
+*.bin
+*.safetensors
+*.onnx
+
+# --- editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+
+# --- misc local ---
+.sisyphus/
+eval/ragas_snapshot.json
+.claude/

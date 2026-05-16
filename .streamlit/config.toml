@@ -1,0 +1,18 @@
+[server]
+maxUploadSize = 5000
+maxMessageSize = 5000
+headless = false
+runOnSave = false
+# "poll" avoids walking every module's __path__ — kills the transformers/torchvision noise
+fileWatcherType = "poll"
+folderWatchBlacklist = ["**/transformers/**", "**/torch/**", "**/torchvision/**", "**/sentence_transformers/**"]
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"
+primaryColor = "#76B900"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#1a1d24"
+textColor = "#fafafa"
